@@ -1,0 +1,26 @@
+  准备工作
+    1.创建SeleniumMiddleware中间件
+        创建Chorm类用来实现selenium对象相关代码
+        创建SeleniumMiddleware类实现调用selenium的代码
+        配置setting
+    2.创建数据项
+        编写items中的代码
+        配置setting
+    3.保存数据库
+        在pipelines新定义一个类shujuku用来保存数据
+            连接数据库
+            创建游标对象
+            编写sql语句
+            执行sql语句
+            关闭游标对象
+    4.编写爬取IP代理的爬虫并赛选取有用的IP代理保存进文件
+    5.设置IP代理和伪装
+
+  开始编写爬虫代码
+    1.找到url
+    2.利用中间件发送请求获取数据
+    3.返回数据，解析数据，拿到3个数据和详情url
+    4.向详情url发送请求
+    5.解析数据
+    6.保存数据
+  优化代码
